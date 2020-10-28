@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TPlus.Api</RootNamespace>
-    <AssemblyName>tplus-api-sdk</AssemblyName>
+    <AssemblyName>chanjet-tplus-openapi-sdk</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
