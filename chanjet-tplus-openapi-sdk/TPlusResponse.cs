@@ -10,19 +10,24 @@ namespace TPlus.Api
     public abstract class TPlusResponse
     {
         [JsonProperty("code")]
-        public string ErrCode { get; set; }
+        public string Code { get; set; }
 
         [JsonProperty("message")]
-        public string ErrMsg { get; set; }
+        public string Message { get; set; }
 
         public string Body { get; set; }
 
-        public bool IsError
+        public virtual bool IsError
         {
             get
             {
-                return !string.IsNullOrEmpty(ErrCode);
+                return !string.IsNullOrEmpty(Code);
             }
+        }
+
+        public virtual void Load(string s)
+        {
+            JsonConvert.PopulateObject(s, this);
         }
     }
 }

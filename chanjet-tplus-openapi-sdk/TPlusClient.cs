@@ -33,23 +33,6 @@ namespace TPlus.Api
             this.privateKeyPath = privateKeyPath;
         }
 
-        private T Parse<T>(string body) where T : TPlusResponse
-        {
-            T rsp = JsonConvert.DeserializeObject<T>(body);
-
-            if (rsp == null)
-            {
-                rsp = Activator.CreateInstance<T>();
-            }
-
-            if (rsp != null)
-            {
-                rsp.Body = body;
-            }
-
-            return rsp;
-        }
-
         private T DoExecute<T>(IRequest<T> request, string access_token) where T : TPlusResponse
         {
             string args = JsonConvert.SerializeObject(request, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
@@ -67,7 +50,16 @@ namespace TPlus.Api
 
             HttpResponseMessage responseMessage = httpClient.SendAsync(requestMessage).Result;
             string body = responseMessage.Content.ReadAsStringAsync().Result;
-            return Parse<T>(body);
+
+            T rsp = Activator.CreateInstance<T>();
+
+            if (rsp != null)
+            {
+                rsp.Body = body;
+                rsp.Load(body);
+            }
+
+            return rsp;
         }
 
         public T Execute<T>(IRequest<T> request) where T : TPlusResponse
