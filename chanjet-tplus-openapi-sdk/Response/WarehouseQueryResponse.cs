@@ -8,20 +8,7 @@ using TPlus.Api.Domain;
 
 namespace TPlus.Api.Response
 {
-    public class WarehouseQueryResponse : TPlusResponse
+    public class WarehouseQueryResponse : ListResultResponse<WarehouseDTO>
     {
-        public List<WarehouseDTO> Result { get; set; }
-
-        public override void Load(string s)
-        {
-            if (s.StartsWith("[") && s.EndsWith("]"))
-            {
-                Result = JsonConvert.DeserializeObject<List<WarehouseDTO>>(s);
-            }
-            else
-            {
-                base.Load(s);
-            }
-        }
     }
 }
