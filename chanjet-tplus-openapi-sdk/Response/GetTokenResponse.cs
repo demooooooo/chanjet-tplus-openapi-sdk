@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TPlus.Api.Response
 {
-    public class LoginResponse : TPlusResponse
+    public class GetTokenResponse : TPlusResponse
     {
         [JsonProperty("result")]
         public bool Result { get; set; }

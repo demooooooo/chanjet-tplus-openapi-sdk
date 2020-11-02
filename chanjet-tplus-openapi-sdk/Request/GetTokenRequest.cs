@@ -8,7 +8,7 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class LoginRequest : IRequest<LoginResponse>
+    public class GetTokenRequest : IRequest<GetTokenResponse>
     {
         public string GetResourceMethod()
         {
