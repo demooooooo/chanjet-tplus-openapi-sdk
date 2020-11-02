@@ -66,12 +66,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request\CreateSaleDeliveryRequest.cs" />
     <Compile Include="Request\GetTokenRequest.cs" />
-    <Compile Include="Request\WarehouseQueryRequest.cs" />
+    <Compile Include="Request\QueryWarehouseRequest.cs" />
     <Compile Include="Response\CreateSaleDeliveryResponse.cs" />
     <Compile Include="Response\ListResultResponse.cs" />
     <Compile Include="Response\GetTokenResponse.cs" />
     <Compile Include="Response\NullResultResponse.cs" />
-    <Compile Include="Response\WarehouseQueryResponse.cs" />
+    <Compile Include="Response\QueryWarehouseResponse.cs" />
     <Compile Include="TPlusClient.cs" />
     <Compile Include="TPlusResponse.cs" />
     <Compile Include="Util\SecurityUtil.cs" />

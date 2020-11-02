@@ -9,7 +9,7 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class WarehouseQueryRequest : IRequest<WarehouseQueryResponse>
+    public class QueryWarehouseRequest : IRequest<QueryWarehouseResponse>
     {
         public string GetResourceMethod()
         {

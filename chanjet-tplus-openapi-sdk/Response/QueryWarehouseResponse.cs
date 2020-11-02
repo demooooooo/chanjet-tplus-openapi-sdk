@@ -8,7 +8,7 @@ using TPlus.Api.Domain;
 
 namespace TPlus.Api.Response
 {
-    public class WarehouseQueryResponse : ListResultResponse<WarehouseDTO>
+    public class QueryWarehouseResponse : ListResultResponse<WarehouseDTO>
     {
     }
 }
