@@ -71,10 +71,12 @@
     <Compile Include="IRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request\CreateOtherDispatchRequest.cs" />
+    <Compile Include="Request\CreateOtherReceiveRequest.cs" />
     <Compile Include="Request\CreateSaleDeliveryRequest.cs" />
     <Compile Include="Request\GetTokenRequest.cs" />
     <Compile Include="Request\QueryWarehouseRequest.cs" />
     <Compile Include="Response\CreateOtherDispatchResponse.cs" />
+    <Compile Include="Response\CreateOtherReceiveResponse.cs" />
     <Compile Include="Response\CreateSaleDeliveryResponse.cs" />
     <Compile Include="Response\ListResultResponse.cs" />
     <Compile Include="Response\GetTokenResponse.cs" />
