@@ -9,23 +9,28 @@ namespace TPlus.Api.Domain
     /// <summary>
     /// 业务类型
     /// 对应AA_BusiType表
-    /// TODO: 因为是账套相关的设置，建议从SDK移除。
+    /// 注意，当前业务类型列表并不完整。
+    /// 大家可自行添加通用的业务类型，但不要把自定义的业务类型添加到SDK中。
     /// </summary>
     public class BusinessType
     {
-        private static BusiTypeDTO other;
+        private static readonly Dictionary<string, BusiTypeDTO> busiTypes = new Dictionary<string, BusiTypeDTO>();
 
-        public static BusiTypeDTO Other
+        public static BusiTypeDTO EnumItemByCode(string code)
         {
-            get
+            if (!busiTypes.TryGetValue(code, out BusiTypeDTO busiType))
             {
-                if (other == null)
-                {
-                    other = new BusiTypeDTO { Code = "13" };
-                }
-
-                return other;
+                busiType = new BusiTypeDTO { Code = code };
+                busiTypes.Add(code, busiType);
             }
+
+            return busiType;
         }
+
+        public static BusiTypeDTO 其他 => EnumItemByCode("13");
+        public static BusiTypeDTO 其他退库 => EnumItemByCode("14");
+        public static BusiTypeDTO 普通销售 => EnumItemByCode("15");
+        public static BusiTypeDTO 销售退货 => EnumItemByCode("16");
+        public static BusiTypeDTO 盘亏 => EnumItemByCode("25");
     }
 }
