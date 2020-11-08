@@ -51,22 +51,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\BusinessType.cs" />
+    <Compile Include="Domain\BusiTypeDTO.cs" />
     <Compile Include="Domain\DTO.cs" />
     <Compile Include="Domain\EnumItem.cs" />
     <Compile Include="Domain\InventoryDTO.cs" />
+    <Compile Include="Domain\RDRecordDTO.cs" />
     <Compile Include="Domain\PartnerDTO.cs" />
     <Compile Include="Domain\ProjectDTO.cs" />
+    <Compile Include="Domain\RDRecordDetailDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDetailDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDTO.cs" />
     <Compile Include="Domain\SaleDeliveryInvoiceType.cs" />
     <Compile Include="Domain\UnitDTO.cs" />
+    <Compile Include="Domain\VoucherType.cs" />
+    <Compile Include="Domain\VoucherTypeDTO.cs" />
     <Compile Include="Domain\WarehouseDTO.cs" />
     <Compile Include="Domain\WarehouseEntityDTO.cs" />
     <Compile Include="IRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\CreateOtherDispatchRequest.cs" />
     <Compile Include="Request\CreateSaleDeliveryRequest.cs" />
     <Compile Include="Request\GetTokenRequest.cs" />
     <Compile Include="Request\QueryWarehouseRequest.cs" />
+    <Compile Include="Response\CreateOtherDispatchResponse.cs" />
     <Compile Include="Response\CreateSaleDeliveryResponse.cs" />
     <Compile Include="Response\ListResultResponse.cs" />
     <Compile Include="Response\GetTokenResponse.cs" />
