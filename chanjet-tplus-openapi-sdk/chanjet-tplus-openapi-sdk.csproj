@@ -73,11 +73,13 @@
     <Compile Include="Request\CreateOtherDispatchRequest.cs" />
     <Compile Include="Request\CreateOtherReceiveRequest.cs" />
     <Compile Include="Request\CreateSaleDeliveryRequest.cs" />
+    <Compile Include="Request\CreateSaleDispatchRequest.cs" />
     <Compile Include="Request\GetTokenRequest.cs" />
     <Compile Include="Request\QueryWarehouseRequest.cs" />
     <Compile Include="Response\CreateOtherDispatchResponse.cs" />
     <Compile Include="Response\CreateOtherReceiveResponse.cs" />
     <Compile Include="Response\CreateSaleDeliveryResponse.cs" />
+    <Compile Include="Response\CreateSaleDispatchResponse.cs" />
     <Compile Include="Response\ListResultResponse.cs" />
     <Compile Include="Response\GetTokenResponse.cs" />
     <Compile Include="Response\NullResultResponse.cs" />
