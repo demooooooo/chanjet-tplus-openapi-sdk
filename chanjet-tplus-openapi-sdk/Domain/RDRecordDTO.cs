@@ -16,6 +16,18 @@ namespace TPlus.Api.Domain
         public string ExternalCode { get; set; }
 
         /// <summary>
+        /// 客户
+        /// </summary>
+        [JsonProperty("Partner")]
+        public PartnerDTO Partner { get; set; }
+
+        /// <summary>
+        /// 项目
+        /// </summary>
+        [JsonProperty("Project")]
+        public ProjectDTO Project { get; set; }
+
+        /// <summary>
         /// 单据类型
         /// </summary>
         [JsonProperty("VoucherType")]
@@ -38,6 +50,12 @@ namespace TPlus.Api.Domain
         /// </summary>
         [JsonProperty("Warehouse")]
         public WarehouseDTO Warehouse { get; set; }
+
+        /// <summary>
+        /// 业务员
+        /// </summary>
+        [JsonProperty("Clerk")]
+        public PersonDTO Clerk { get; set; }
 
         /// <summary>
         /// 备注

@@ -56,6 +56,7 @@
     <Compile Include="Domain\DTO.cs" />
     <Compile Include="Domain\EnumItem.cs" />
     <Compile Include="Domain\InventoryDTO.cs" />
+    <Compile Include="Domain\PersonDTO.cs" />
     <Compile Include="Domain\RDRecordDTO.cs" />
     <Compile Include="Domain\PartnerDTO.cs" />
     <Compile Include="Domain\ProjectDTO.cs" />
