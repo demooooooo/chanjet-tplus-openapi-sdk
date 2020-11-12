@@ -14,17 +14,9 @@ namespace TPlus.Api.Domain
     /// </summary>
     public class BusinessType
     {
-        private static readonly Dictionary<string, BusiTypeDTO> busiTypes = new Dictionary<string, BusiTypeDTO>();
-
         public static BusiTypeDTO EnumItemByCode(string code)
         {
-            if (!busiTypes.TryGetValue(code, out BusiTypeDTO busiType))
-            {
-                busiType = new BusiTypeDTO { Code = code };
-                busiTypes.Add(code, busiType);
-            }
-
-            return busiType;
+            return new BusiTypeDTO { Code = code };
         }
 
         public static BusiTypeDTO 其他 => EnumItemByCode("13");

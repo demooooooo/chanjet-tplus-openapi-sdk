@@ -12,17 +12,9 @@ namespace TPlus.Api.Domain
     /// </summary>
     public class VoucherType
     {
-        private static readonly Dictionary<string, VoucherTypeDTO> voucherTypes = new Dictionary<string, VoucherTypeDTO>();
-
         public static VoucherTypeDTO EnumItemByCode(string code)
         {
-            if (!voucherTypes.TryGetValue(code, out VoucherTypeDTO voucherType))
-            {
-                voucherType = new VoucherTypeDTO { Code = code };
-                voucherTypes.Add(code, voucherType);
-            }
-
-            return voucherType;
+            return new VoucherTypeDTO { Code = code };
         }
 
         public static VoucherTypeDTO 其他入库单 => EnumItemByCode("ST1004");
