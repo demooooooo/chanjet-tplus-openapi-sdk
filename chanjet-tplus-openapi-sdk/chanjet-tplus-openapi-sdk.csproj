@@ -51,11 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\BaseEntityDTO.cs" />
     <Compile Include="Domain\BusinessType.cs" />
     <Compile Include="Domain\BusiTypeDTO.cs" />
+    <Compile Include="Domain\DepartmentDTO.cs" />
+    <Compile Include="Domain\DistrictDTO.cs" />
     <Compile Include="Domain\DTO.cs" />
+    <Compile Include="Domain\DTOStatus.cs" />
     <Compile Include="Domain\EnumItem.cs" />
+    <Compile Include="Domain\EnumItemEntityDTO.cs" />
     <Compile Include="Domain\InventoryDTO.cs" />
+    <Compile Include="Domain\PartnerAddressDTO.cs" />
+    <Compile Include="Domain\PartnerClassDTO.cs" />
+    <Compile Include="Domain\PartnerEntityDTO.cs" />
+    <Compile Include="Domain\PartnerType.cs" />
     <Compile Include="Domain\PersonDTO.cs" />
     <Compile Include="Domain\RDRecordDTO.cs" />
     <Compile Include="Domain\PartnerDTO.cs" />
@@ -76,6 +85,7 @@
     <Compile Include="Request\CreateSaleDeliveryRequest.cs" />
     <Compile Include="Request\CreateSaleDispatchRequest.cs" />
     <Compile Include="Request\GetTokenRequest.cs" />
+    <Compile Include="Request\QueryPartnerRequest.cs" />
     <Compile Include="Request\QueryWarehouseRequest.cs" />
     <Compile Include="Response\CreateOtherDispatchResponse.cs" />
     <Compile Include="Response\CreateOtherReceiveResponse.cs" />
@@ -84,6 +94,7 @@
     <Compile Include="Response\ListResultResponse.cs" />
     <Compile Include="Response\GetTokenResponse.cs" />
     <Compile Include="Response\NullResultResponse.cs" />
+    <Compile Include="Response\QueryPartnerResponse.cs" />
     <Compile Include="Response\QueryWarehouseResponse.cs" />
     <Compile Include="TPlusClient.cs" />
     <Compile Include="TPlusResponse.cs" />

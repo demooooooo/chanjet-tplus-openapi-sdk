@@ -9,7 +9,7 @@ namespace TPlus.Api.Response
 {
     public class ListResultResponse<T> : TPlusResponse
     {
-        public List<T> Result { get; set; }
+        public IList<T> Result { get; set; }
 
         public override void Load(string s)
         {
