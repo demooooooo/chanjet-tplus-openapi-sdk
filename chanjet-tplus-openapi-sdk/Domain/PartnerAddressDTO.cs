@@ -61,31 +61,31 @@ namespace TPlus.Api.Domain
         public string Fax { get; set; }
 
         /// <summary>
-        /// Email
+        /// 电子邮件
         /// </summary>
         [JsonProperty("EmailAddr")]
         public string EmailAddr { get; set; }
 
         /// <summary>
-        /// QQ
+        /// QQ号
         /// </summary>
         [JsonProperty("QqNo")]
         public string QqNo { get; set; }
 
         /// <summary>
-        /// MSN
+        /// MSN地址
         /// </summary>
         [JsonProperty("MsnAddress")]
         public string MsnAddress { get; set; }
 
         /// <summary>
-        /// UU
+        /// UU号
         /// </summary>
         [JsonProperty("UuNo")]
         public string UuNo { get; set; }
 
         /// <summary>
-        /// 默认
+        /// 默认地址
         /// </summary>
         [JsonProperty("IsDefaultAddress")]
         public bool? IsDefaultAddress { get; set; }
