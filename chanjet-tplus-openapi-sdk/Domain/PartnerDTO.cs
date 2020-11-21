@@ -19,7 +19,7 @@ namespace TPlus.Api.Domain
         /// 性质
         /// </summary>
         [JsonProperty("PartnerType")]
-        public EnumItemEntityDTO PartnerType { get; set; }
+        public EnumItem PartnerType { get; set; }
 
         /// <summary>
         /// 结算客户
@@ -80,6 +80,36 @@ namespace TPlus.Api.Domain
         /// </summary>
         [JsonProperty("Disabled")]
         public bool? Disabled { get; set; }
+
+        /// <summary>
+        /// 信用额度
+        /// </summary>
+        [JsonProperty("CreditBalance")]
+        public decimal? CreditBalance { get; set; }
+
+        /// <summary>
+        /// 应收余额
+        /// </summary>
+        [JsonProperty("ARBalance")]
+        public decimal? ARBalance { get; set; }
+
+        /// <summary>
+        /// 预收余额
+        /// </summary>
+        [JsonProperty("AdvRBalance")]
+        public decimal? AdvRBalance { get; set; }
+
+        /// <summary>
+        /// 应付余额
+        /// </summary>
+        [JsonProperty("APBalance")]
+        public decimal? APBalance { get; set; }
+
+        /// <summary>
+        /// 预付余额
+        /// </summary>
+        [JsonProperty("AdvPBalance")]
+        public decimal? AdvPBalance { get; set; }
 
         /// <summary>
         /// 自动生成会员
