@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\BaseEntityDTO.cs" />
-    <Compile Include="Domain\BusinessType.cs" />
     <Compile Include="Domain\BusiTypeDTO.cs" />
     <Compile Include="Domain\DepartmentDTO.cs" />
     <Compile Include="Domain\DistrictDTO.cs" />
@@ -65,7 +64,6 @@
     <Compile Include="Domain\PartnerAddressDTO.cs" />
     <Compile Include="Domain\PartnerClassDTO.cs" />
     <Compile Include="Domain\PartnerEntityDTO.cs" />
-    <Compile Include="Domain\PartnerType.cs" />
     <Compile Include="Domain\PersonDTO.cs" />
     <Compile Include="Domain\RDRecordDTO.cs" />
     <Compile Include="Domain\PartnerDTO.cs" />
@@ -73,9 +71,7 @@
     <Compile Include="Domain\RDRecordDetailDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDetailDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDTO.cs" />
-    <Compile Include="Domain\SaleDeliveryInvoiceType.cs" />
     <Compile Include="Domain\UnitDTO.cs" />
-    <Compile Include="Domain\VoucherType.cs" />
     <Compile Include="Domain\VoucherTypeDTO.cs" />
     <Compile Include="Domain\WarehouseDTO.cs" />
     <Compile Include="Domain\WarehouseEntityDTO.cs" />
