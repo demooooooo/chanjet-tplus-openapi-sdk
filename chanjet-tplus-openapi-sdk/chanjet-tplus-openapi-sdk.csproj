@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Domain\BaseEntityDTO.cs" />
     <Compile Include="Domain\BusiTypeDTO.cs" />
+    <Compile Include="Domain\CurrencyDTO.cs" />
     <Compile Include="Domain\DepartmentDTO.cs" />
     <Compile Include="Domain\DistrictDTO.cs" />
     <Compile Include="Domain\DTO.cs" />
@@ -65,10 +66,14 @@
     <Compile Include="Domain\PartnerClassDTO.cs" />
     <Compile Include="Domain\PartnerEntityDTO.cs" />
     <Compile Include="Domain\PersonDTO.cs" />
+    <Compile Include="Domain\PurchaseArrivalDetailDTO.cs" />
+    <Compile Include="Domain\PurchaseArrivalDTO.cs" />
+    <Compile Include="Domain\PurchaseArrivalMultiSettleDetailDTO.cs" />
     <Compile Include="Domain\RDRecordDTO.cs" />
     <Compile Include="Domain\PartnerDTO.cs" />
     <Compile Include="Domain\ProjectDTO.cs" />
     <Compile Include="Domain\RDRecordDetailDTO.cs" />
+    <Compile Include="Domain\RdStyleDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDetailDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDTO.cs" />
     <Compile Include="Domain\UnitDTO.cs" />
@@ -80,6 +85,7 @@
     <Compile Include="Request\CreateOtherDispatchRequest.cs" />
     <Compile Include="Request\CreateOtherReceiveRequest.cs" />
     <Compile Include="Request\CreatePartnerRequest.cs" />
+    <Compile Include="Request\CreatePurchaseArrivalRequest.cs" />
     <Compile Include="Request\CreateSaleDeliveryRequest.cs" />
     <Compile Include="Request\CreateSaleDispatchRequest.cs" />
     <Compile Include="Request\GetTokenRequest.cs" />
@@ -88,6 +94,7 @@
     <Compile Include="Response\CreateOtherDispatchResponse.cs" />
     <Compile Include="Response\CreateOtherReceiveResponse.cs" />
     <Compile Include="Response\CreatePartnerResponse.cs" />
+    <Compile Include="Response\CreatePurchaseArrivalResponse.cs" />
     <Compile Include="Response\CreateSaleDeliveryResponse.cs" />
     <Compile Include="Response\CreateSaleDispatchResponse.cs" />
     <Compile Include="Response\ListResultResponse.cs" />
