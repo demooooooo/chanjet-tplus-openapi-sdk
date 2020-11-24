@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\BankAccountDTO.cs" />
     <Compile Include="Domain\BaseEntityDTO.cs" />
     <Compile Include="Domain\BusiTypeDTO.cs" />
     <Compile Include="Domain\CurrencyDTO.cs" />
@@ -61,6 +62,8 @@
     <Compile Include="Domain\EnumItem.cs" />
     <Compile Include="Domain\EnumItemEntityDTO.cs" />
     <Compile Include="Domain\InventoryDTO.cs" />
+    <Compile Include="Domain\InventoryLocationDTO.cs" />
+    <Compile Include="Domain\MemberDTO.cs" />
     <Compile Include="Domain\MemberTypeDTO.cs" />
     <Compile Include="Domain\PartnerAddressDTO.cs" />
     <Compile Include="Domain\PartnerClassDTO.cs" />
@@ -76,6 +79,8 @@
     <Compile Include="Domain\RdStyleDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDetailDTO.cs" />
     <Compile Include="Domain\SaleDeliveryDTO.cs" />
+    <Compile Include="Domain\SaleDeliverySettlementDTO.cs" />
+    <Compile Include="Domain\SettleStyleDTO.cs" />
     <Compile Include="Domain\UnitDTO.cs" />
     <Compile Include="Domain\VoucherTypeDTO.cs" />
     <Compile Include="Domain\WarehouseDTO.cs" />

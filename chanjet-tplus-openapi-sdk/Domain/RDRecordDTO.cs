@@ -10,7 +10,7 @@ namespace TPlus.Api.Domain
     public class RDRecordDTO : DTO
     {
         /// <summary>
-        /// 外部系统数据编号
+        /// 外部系统单据编号
         /// </summary>
         [JsonProperty("ExternalCode")]
         public string ExternalCode { get; set; }
