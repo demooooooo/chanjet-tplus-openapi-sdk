@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TPlus.Api.Response;
+using TPlus.Api.Response.CollaborationApp;
 
-namespace TPlus.Api.Request
+namespace TPlus.Api.Request.CollaborationApp
 {
-    public class GetTokenRequest : IRequest<GetTokenResponse>
+    public class GetRealNameTPlusTokenRequest : IRequest<GetRealNameTPlusTokenResponse>
     {
         public string GetResourceMethod()
         {
@@ -23,5 +23,11 @@ namespace TPlus.Api.Request
 
         [JsonProperty("accNum")]
         public string AccNum { get; set; }
+
+        [JsonProperty("cspAppKey")]
+        public string CspAppKey { get; set; }
+
+        [JsonProperty("cspAppSecret")]
+        public string CspAppSecret { get; set; }
     }
 }

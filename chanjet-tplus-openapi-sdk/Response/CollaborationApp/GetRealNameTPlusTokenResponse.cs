@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TPlus.Api.Response
+namespace TPlus.Api.Response.CollaborationApp
 {
-    public class GetTokenResponse : TPlusResponse
+    public class GetRealNameTPlusTokenResponse : TPlusResponse
     {
         [JsonProperty("result")]
         public bool Result { get; set; }

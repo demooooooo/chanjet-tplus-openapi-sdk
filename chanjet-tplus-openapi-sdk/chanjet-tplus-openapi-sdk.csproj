@@ -87,15 +87,16 @@
     <Compile Include="Domain\WarehouseEntityDTO.cs" />
     <Compile Include="IRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\CollaborationApp\GetRealNameTPlusTokenRequest.cs" />
     <Compile Include="Request\CreateOtherDispatchRequest.cs" />
     <Compile Include="Request\CreateOtherReceiveRequest.cs" />
     <Compile Include="Request\CreatePartnerRequest.cs" />
     <Compile Include="Request\CreatePurchaseArrivalRequest.cs" />
     <Compile Include="Request\CreateSaleDeliveryRequest.cs" />
     <Compile Include="Request\CreateSaleDispatchRequest.cs" />
-    <Compile Include="Request\GetTokenRequest.cs" />
     <Compile Include="Request\QueryPartnerRequest.cs" />
     <Compile Include="Request\QueryWarehouseRequest.cs" />
+    <Compile Include="Response\CollaborationApp\GetRealNameTPlusTokenResponse.cs" />
     <Compile Include="Response\CreateOtherDispatchResponse.cs" />
     <Compile Include="Response\CreateOtherReceiveResponse.cs" />
     <Compile Include="Response\CreatePartnerResponse.cs" />
@@ -103,7 +104,6 @@
     <Compile Include="Response\CreateSaleDeliveryResponse.cs" />
     <Compile Include="Response\CreateSaleDispatchResponse.cs" />
     <Compile Include="Response\ListResultResponse.cs" />
-    <Compile Include="Response\GetTokenResponse.cs" />
     <Compile Include="Response\NullResultResponse.cs" />
     <Compile Include="Response\QueryPartnerResponse.cs" />
     <Compile Include="Response\QueryWarehouseResponse.cs" />
