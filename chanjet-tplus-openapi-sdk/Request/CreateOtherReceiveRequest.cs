@@ -9,9 +9,9 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class CreateOtherReceiveRequest : IRequest<CreateOtherReceiveResponse>
+    public class CreateOtherReceiveRequest : TPlusRequest<CreateOtherReceiveResponse>
     {
-        public string GetResourceMethod()
+        public override string GetResourceMethod()
         {
             return "otherReceive/Create";
         }

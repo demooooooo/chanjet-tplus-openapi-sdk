@@ -9,9 +9,9 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class QueryPartnerRequest : IRequest<QueryPartnerResponse>
+    public class QueryPartnerRequest : TPlusRequest<QueryPartnerResponse>
     {
-        public string GetResourceMethod()
+        public override string GetResourceMethod()
         {
             return "partner/Query";
         }

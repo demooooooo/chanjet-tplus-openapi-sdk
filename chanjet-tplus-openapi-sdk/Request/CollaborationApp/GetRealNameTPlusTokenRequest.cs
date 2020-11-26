@@ -5,14 +5,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TPlus.Api.Response.CollaborationApp;
+using TPlus.Api.Util;
 
 namespace TPlus.Api.Request.CollaborationApp
 {
-    public class GetRealNameTPlusTokenRequest : IRequest<GetRealNameTPlusTokenResponse>
+    public class GetRealNameTPlusTokenRequest : TPlusRequest<GetRealNameTPlusTokenResponse>
     {
-        public string GetResourceMethod()
+        public override string GetResourceMethod()
         {
             return "collaborationapp/GetRealNameTPlusToken?IsFree=1";
+        }
+
+        public override string ToJson()
+        {
+            GetRealNameTPlusTokenRequest request = (GetRealNameTPlusTokenRequest)this.MemberwiseClone();
+            if (!string.IsNullOrEmpty(request.Password))
+            {
+                request.Password = SecurityUtil.GetMd5(request.Password);
+            }
+
+            return JsonConvert.SerializeObject(request, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
         }
 
         [JsonProperty("userName")]

@@ -9,9 +9,9 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class CreateSaleDeliveryRequest : IRequest<CreateSaleDeliveryResponse>
+    public class CreateSaleDeliveryRequest : TPlusRequest<CreateSaleDeliveryResponse>
     {
-        public string GetResourceMethod()
+        public override string GetResourceMethod()
         {
             return "saleDelivery/Create";
         }

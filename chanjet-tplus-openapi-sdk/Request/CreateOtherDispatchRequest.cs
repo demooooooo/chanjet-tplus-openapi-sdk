@@ -9,9 +9,9 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class CreateOtherDispatchRequest : IRequest<CreateOtherDispatchResponse>
+    public class CreateOtherDispatchRequest : TPlusRequest<CreateOtherDispatchResponse>
     {
-        public string GetResourceMethod()
+        public override string GetResourceMethod()
         {
             return "otherDispatch/Create";
         }

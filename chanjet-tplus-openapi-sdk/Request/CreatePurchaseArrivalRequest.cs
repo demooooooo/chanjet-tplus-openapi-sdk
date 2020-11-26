@@ -9,9 +9,9 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class CreatePurchaseArrivalRequest : IRequest<CreatePurchaseArrivalResponse>
+    public class CreatePurchaseArrivalRequest : TPlusRequest<CreatePurchaseArrivalResponse>
     {
-        public string GetResourceMethod()
+        public override string GetResourceMethod()
         {
             return "purchaseArrival/Create";
         }

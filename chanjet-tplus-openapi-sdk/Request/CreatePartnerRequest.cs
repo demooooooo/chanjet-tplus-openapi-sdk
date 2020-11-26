@@ -9,9 +9,9 @@ using TPlus.Api.Response;
 
 namespace TPlus.Api.Request
 {
-    public class CreatePartnerRequest : IRequest<CreatePartnerResponse>
+    public class CreatePartnerRequest : TPlusRequest<CreatePartnerResponse>
     {
-        public string GetResourceMethod()
+        public override string GetResourceMethod()
         {
             return "partner/Create";
         }

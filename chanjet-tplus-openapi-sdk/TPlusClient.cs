@@ -33,9 +33,9 @@ namespace TPlus.Api
             this.privateKeyPath = privateKeyPath;
         }
 
-        private T DoExecute<T>(IRequest<T> request, string access_token) where T : TPlusResponse
+        private T DoExecute<T>(TPlusRequest<T> request, string access_token) where T : TPlusResponse
         {
-            string args = JsonConvert.SerializeObject(request, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            string args = request.ToJson();
             string authorization = SecurityUtil.CreateAuthorizationHeader(appKey, appSecret, "", privateKeyPath, access_token);
 
             var payload = new Dictionary<string, string>
@@ -62,12 +62,12 @@ namespace TPlus.Api
             return rsp;
         }
 
-        public T Execute<T>(IRequest<T> request) where T : TPlusResponse
+        public T Execute<T>(TPlusRequest<T> request) where T : TPlusResponse
         {
             return DoExecute<T>(request, null);
         }
 
-        public T Execute<T>(IRequest<T> request, string access_token) where T : TPlusResponse
+        public T Execute<T>(TPlusRequest<T> request, string access_token) where T : TPlusResponse
         {
             return DoExecute<T>(request, access_token);
         }
