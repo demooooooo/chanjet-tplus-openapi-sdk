@@ -5,18 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TPlus.Api.Domain;
-using TPlus.Api.Response;
+using TPlus.Api.Response.Warehouse;
 
-namespace TPlus.Api.Request
+namespace TPlus.Api.Request.Warehouse
 {
-    public class QueryPartnerRequest : TPlusRequest<QueryPartnerResponse>
+    public class QueryWarehouseRequest : TPlusRequest<QueryWarehouseResponse>
     {
         public override string GetResourceMethod()
         {
-            return "partner/Query";
+            return "warehouse/Query";
         }
 
         [JsonProperty("param")]
-        public PartnerEntityDTO Param { get; set; }
+        public WarehouseEntityDTO Param { get; set; }
     }
 }

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TPlus.Api.Domain;
 
-namespace TPlus.Api.Response
+namespace TPlus.Api.Response.Warehouse
 {
-    public class QueryPartnerResponse : ListResultResponse<PartnerEntityDTO>
+    public class QueryWarehouseResponse : ListResultResponse<WarehouseDTO>
     {
     }
 }
