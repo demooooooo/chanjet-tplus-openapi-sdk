@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TPlus.Api.Domain;
-using TPlus.Api.Response;
+using TPlus.Api.Response.PurchaseArrival;
 
-namespace TPlus.Api.Request
+namespace TPlus.Api.Request.PurchaseArrival
 {
     public class CreatePurchaseArrivalRequest : TPlusRequest<CreatePurchaseArrivalResponse>
     {

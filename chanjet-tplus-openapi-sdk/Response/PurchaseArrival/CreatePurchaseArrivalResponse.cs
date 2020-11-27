@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TPlus.Api.Response
+namespace TPlus.Api.Response.PurchaseArrival
 {
-    public class CreateOtherDispatchResponse : NullResultResponse
+    public class CreatePurchaseArrivalResponse : NullResultResponse
     {
     }
 }

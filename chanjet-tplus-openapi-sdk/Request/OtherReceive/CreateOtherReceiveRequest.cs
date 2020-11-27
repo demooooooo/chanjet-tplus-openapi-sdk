@@ -5,18 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TPlus.Api.Domain;
-using TPlus.Api.Response;
+using TPlus.Api.Response.OtherReceive;
 
-namespace TPlus.Api.Request
+namespace TPlus.Api.Request.OtherReceive
 {
-    public class CreateSaleDeliveryRequest : TPlusRequest<CreateSaleDeliveryResponse>
+    public class CreateOtherReceiveRequest : TPlusRequest<CreateOtherReceiveResponse>
     {
         public override string GetResourceMethod()
         {
-            return "saleDelivery/Create";
+            return "otherReceive/Create";
         }
 
         [JsonProperty("dto")]
-        public SaleDeliveryDTO SaleDelivery { get; set; }
+        public RDRecordDTO OtherReceive { get; set; }
     }
 }

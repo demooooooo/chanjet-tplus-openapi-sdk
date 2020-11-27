@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TPlus.Api.Response
+namespace TPlus.Api.Response.OtherDispatch
 {
-    public class CreateOtherReceiveResponse : NullResultResponse
+    public class CreateOtherDispatchResponse : NullResultResponse
     {
     }
 }
