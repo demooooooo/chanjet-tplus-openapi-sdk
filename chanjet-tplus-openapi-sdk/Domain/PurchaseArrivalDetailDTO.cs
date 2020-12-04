@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TPlus.Api.JsonConverters;
 
 namespace TPlus.Api.Domain
 {
@@ -25,7 +26,8 @@ namespace TPlus.Api.Domain
         /// 失效日期
         /// </summary>
         [JsonProperty("ExpiryDate")]
-        public string ExpiryDate { get; set; }
+        [JsonConverter(typeof(TPlusDateConverter))]
+        public DateTime? ExpiryDate { get; set; }
 
         /// <summary>
         /// 批号

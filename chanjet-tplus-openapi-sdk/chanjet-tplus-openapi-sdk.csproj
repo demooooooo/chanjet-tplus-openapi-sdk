@@ -85,6 +85,8 @@
     <Compile Include="Domain\VoucherTypeDTO.cs" />
     <Compile Include="Domain\WarehouseDTO.cs" />
     <Compile Include="Domain\WarehouseEntityDTO.cs" />
+    <Compile Include="JsonConverters\TPlusDateConverter.cs" />
+    <Compile Include="JsonConverters\TPlusDateTimeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request\CollaborationApp\GetRealNameTPlusTokenRequest.cs" />
     <Compile Include="Request\OtherDispatch\CreateOtherDispatchRequest.cs" />

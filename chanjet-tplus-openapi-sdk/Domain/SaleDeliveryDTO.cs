@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TPlus.Api.JsonConverters;
 
 namespace TPlus.Api.Domain
 {
@@ -13,7 +14,8 @@ namespace TPlus.Api.Domain
         /// 单据日期
         /// </summary>
         [JsonProperty("VoucherDate")]
-        public string VoucherDate { get; set; }
+        [JsonConverter(typeof(TPlusDateConverter))]
+        public DateTime? VoucherDate { get; set; }
 
         /// <summary>
         /// 外部系统单据编号
@@ -97,7 +99,8 @@ namespace TPlus.Api.Domain
         /// 交货日期
         /// </summary>
         [JsonProperty("DeliveryDate")]
-        public string DeliveryDate { get; set; }
+        [JsonConverter(typeof(TPlusDateConverter))]
+        public DateTime? DeliveryDate { get; set; }
 
         /// <summary>
         /// 运输方式
