@@ -93,6 +93,7 @@
     <Compile Include="Request\OtherReceive\CreateOtherReceiveRequest.cs" />
     <Compile Include="Request\Partner\CreatePartnerRequest.cs" />
     <Compile Include="Request\Partner\QueryPartnerRequest.cs" />
+    <Compile Include="Request\Person\QueryPersonRequest.cs" />
     <Compile Include="Request\PurchaseArrival\CreatePurchaseArrivalRequest.cs" />
     <Compile Include="Request\SaleDelivery\CreateSaleDeliveryRequest.cs" />
     <Compile Include="Request\SaleDispatch\CreateSaleDispatchRequest.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Response\OtherReceive\CreateOtherReceiveResponse.cs" />
     <Compile Include="Response\Partner\CreatePartnerResponse.cs" />
     <Compile Include="Response\Partner\QueryPartnerResponse.cs" />
+    <Compile Include="Response\Person\QueryPersonResponse.cs" />
     <Compile Include="Response\PurchaseArrival\CreatePurchaseArrivalResponse.cs" />
     <Compile Include="Response\SaleDelivery\CreateSaleDeliveryResponse.cs" />
     <Compile Include="Response\SaleDispatch\CreateSaleDispatchResponse.cs" />
